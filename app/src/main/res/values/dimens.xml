@@ -1,0 +1,98 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    <dimen name="codelab_fab_margin_right">0dp</dimen>
+    <dimen name="codelab_fab_margin_bottom">0dp</dimen>
+
+    <!-- 全局 -->
+
+    <!--全局：阴影-->
+    <dimen name="content_elevation">2dp</dimen>
+
+    <!-- 全局：字体 -->
+    <dimen name="content_txt_size_sssmall">12sp</dimen>
+    <dimen name="content_txt_size_ssmall">14sp</dimen>
+    <dimen name="content_txt_size_small">16sp</dimen>
+    <dimen name="content_txt_size_normal">18sp</dimen>
+    <dimen name="content_txt_size_large">20sp</dimen>
+    <dimen name="content_txt_size_xlarge">22sp</dimen>
+    <dimen name="content_txt_size_xxlarge">25sp</dimen>
+    <dimen name="content_txt_size_xxxlarge">30sp</dimen>
+
+    <!-- 全局：间距  MARGIN -->
+    <dimen name="content_margin_sssmall">2dp</dimen>
+    <dimen name="content_margin_ssmall">4dp</dimen>
+    <dimen name="content_margin_small">5dp</dimen>
+    <dimen name="content_margin_normal">10dp</dimen>
+    <dimen name="content_margin_large">15dp</dimen>
+    <dimen name="content_margin_xlarge">20dp</dimen>
+    <dimen name="content_margin_xxlarge">30dp</dimen>
+    <dimen name="content_margin_xxxlarge">50dp</dimen>
+
+    <!-- 全局：间距  PADDING -->
+    <dimen name="content_padding_ssmall">4dp</dimen>
+    <dimen name="content_padding_small">5dp</dimen>
+    <dimen name="content_padding_normal">10dp</dimen>
+    <dimen name="content_padding_large">15dp</dimen>
+    <dimen name="content_padding_xlarge">20dp</dimen>
+    <dimen name="content_padding_xxlarge">30dp</dimen>
+    <dimen name="content_padding_xxxlarge">50dp</dimen>
+
+    <!-- 全局：按钮高度 -->
+    <dimen name="content_button_width">55dp</dimen>
+    <dimen name="content_button_height">45dp</dimen>
+
+    <!-- 全局：分割线(竖)高度 -->
+    <dimen name="divider_v_height">18dp</dimen>
+    <dimen name="divider_v_height_normal">10dp</dimen>
+
+    <!-- 全局：分割线(列表) -->
+    <dimen name="divider_lv_small">1px</dimen>
+
+    <!-- 全局：图片 -->
+    <dimen name="content_img_size_ssmall">18dp</dimen>
+    <dimen name="content_img_size_small">24dp</dimen>
+    <dimen name="content_img_size_normal">32dp</dimen>
+    <dimen name="content_img_size_large">48dp</dimen>
+    <dimen name="content_img_size_xlarge">56dp</dimen>
+    <dimen name="content_img_size_xxlarge">72dp</dimen>
+    <dimen name="content_img_size_xxxlarge">84dp</dimen>
+    <dimen name="content_img_size_xxxxlarge">96dp</dimen>
+
+    <!-- 全局：表格 -->
+    <dimen name="content_tb_row_height">45dp</dimen>
+    <dimen name="content_tb_title_height">45dp</dimen>
+
+    <!-- 表格 -->
+    <dimen name="table_view_title_size">18sp</dimen>
+    <dimen name="table_view_detail_size">16sp</dimen>
+
+    <!-- 拍照 -->
+    <dimen name="content_photo_height">220dp</dimen>
+
+    <dimen name="tab_bar_height">48dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--其他工程重写-->
+    <dimen name="md_title_textsize">@dimen/content_txt_size_normal</dimen>
+    <dimen name="md_button_textsize">@dimen/content_txt_size_small</dimen>
+    <dimen name="md_content_textsize">@dimen/content_txt_size_small</dimen>
+    <dimen name="md_listitem_textsize">@dimen/content_txt_size_small</dimen>
+
+    <dimen name="design_fab_size_mini">32dp</dimen>
+    <dimen name="design_fab_size_normal">48dp</dimen>
+    <dimen name="fab_size_mini">36dp</dimen>
+    <dimen name="fab_size_normal">48dp</dimen>
+
+    <!--CircularProgressView-->
+    <dimen name="cpv_size_small">3dp</dimen>
+    <dimen name="cpv_size_mini">40dp</dimen>
+
+
+</resources>

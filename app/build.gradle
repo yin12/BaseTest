@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.example.basetest"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:support-annotations:24.0.0'
+    compile 'com.jakewharton:butterknife:7.0.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //Joda-Time
+    compile 'net.danlew:android.joda:2.9.4.1'
+    //腾讯Bugly
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    //各种加载效果库
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.4.0'
+    //日志
+    compile 'com.orhanobut:logger:1.15'
+    //http
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.google.code.gson:gson:2.5'
+    //图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //数据存储
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+    //snackBar
+    compile 'com.github.mrengineer13:snackbar:1.2.0'
+    //Material Design风格的对话框
+    compile 'com.afollestad.material-dialogs:core:0.9.0.1'
+    compile 'com.afollestad.material-dialogs:commons:0.9.0.1'
+    //FloatingActionButton
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.github.jorgecastilloprz:fabprogresscircle:1.01@aar'
+    compile 'com.linroid.filtermenu:library:0.2.3@aar'
+    //    //TAB
+
+    //    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.0@aar'
+
+    //圆角View
+    compile 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+    //扫码
+    compile 'com.journeyapps:zxing-android-embedded:3.3.0@aar'
+    compile 'com.google.zxing:core:3.2.1'
+    //开关
+    compile 'com.kyleduo.switchbutton:library:1.4.1'
+    //Spinner
+    compile 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    //EditText
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    //图片缩放
+    compile 'com.github.chrisbanes:PhotoView:1.3.0'
+    //视图效果
+    compile 'com.manolovn:trianglify:1.0.2'
+    compile 'com.manolovn:colorbrewer:1.0.0'
+    //AndroidTree树形View
+    compile 'com.github.bmelnychuk:atv:1.2.9'
+    //支持下拉刷新和上拉加载更多的RecyclerView
+    compile 'com.jcodecraeer:xrecyclerview:1.2.7'
+    compile 'com.chanven.lib:cptr:1.1.0'
+    //4.2以下安全的WebView
+    compile 'cn.pedant.safewebviewbridge:library:1.4'
+    //boomMenu
+    compile 'com.nightonke:boommenu:1.0.9'
+    //banner
+    compile 'com.youth.banner:banner:1.1.7'
+//greenDao
+    compile 'de.greenrobot:greendao:1.3.7'
+    //最新版本
+    compile files('libs/ksoap2.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+    compile files('libs/httpcore-4.2.4.jar')
+    compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/httpclient-cache-4.2.5.jar')
+    compile files('libs/httpclient-4.2.5.jar')
+    compile files('libs/fluent-hc-4.2.5.jar')
+    compile files('libs/commons-logging-1.1.1.jar')
+    compile files('libs/commons-codec-1.6.jar')
+}

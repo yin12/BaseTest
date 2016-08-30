@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:elevation="@dimen/content_elevation">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            style="@style/MyCollapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            <!--照片-->
+            <ImageView
+                android:id="@+id/img_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/vl"
+                android:minHeight="@dimen/content_photo_height"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"/>
+
+            <!--ToolBar-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/MyActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/immerse_list"/>
+</android.support.design.widget.CoordinatorLayout>

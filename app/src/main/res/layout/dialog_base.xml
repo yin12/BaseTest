@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/table_border"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_margin_small"
+        android:layout_marginTop="@dimen/content_margin_large"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/content_txt_size_large"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <!-- 显示内容 -->
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- 加载动画 -->
+
+        <LinearLayout
+            android:id="@+id/load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/aiv_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:indicator="BallPulse"
+                app:indicator_color="@color/color_hint"/>
+
+            <TextView
+                android:id="@+id/txt_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_margin_small"
+                android:text="@string/loading"
+                android:textColor="@color/color_hint"
+                android:textSize="@dimen/content_txt_size_small"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dl"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/leftBtnLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click"
+            android:gravity="center"
+            android:minHeight="48dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_margin_normal"
+                android:text="@string/sure"
+                android:textColor="@color/sys_normal"
+                android:textSize="@dimen/content_txt_size_normal"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_btn"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/dl"/>
+
+        <LinearLayout
+            android:id="@+id/rightBtnLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_click"
+            android:gravity="center"
+            android:minHeight="48dip">
+
+            <TextView
+                android:id="@+id/txt_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/content_margin_normal"
+                android:text="@string/cancel"
+                android:textColor="@color/color_hint"
+                android:textSize="@dimen/content_txt_size_normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

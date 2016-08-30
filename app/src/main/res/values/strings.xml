@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">BaseTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_close"></string>
+    <string name="drawer_open"></string>
+
+    <!--版本更新-->
+    <string name="version_update">版本更新</string>
+    <string name="immediate_update">立即更新</string>
+    <string name="ignore_update">忽略</string>
+    <string name="cancel_update">取消</string>
+
+    <!--弹出框提示-->
+    <string name="loading">正在加载</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <!--登陆-->
+    <string name="hint_input_account">账号</string>
+    <string name="hint_input_password">密码</string>
+    <string name="login_button">登录</string>
+    <string name="remember_password">记住密码</string>
+    <string name="account_is_mistake">账号不能为空！</string>
+    <string name="password_is_mistake">密码不能为空！</string>
+    <!--mainAdapter-->
+    <string name="hint_title">标题</string>
+
+    <!--主菜单-->
+    <string name="menu_photo">拍照</string>
+    <string name="menu_location">定位</string>
+    <string name="menu_navigation">导航</string>
+    <string name="menu_line">线路规划</string>
+    <string name="menu_record">录音</string>
+    <string name="menu_push">推送</string>
+    <string name="menu_immerse">沉浸式下拉</string>
+    <string name="menu_green_dao">GreenDao</string>
+    <string name="menu_other">其他</string>
+
+
+</resources>

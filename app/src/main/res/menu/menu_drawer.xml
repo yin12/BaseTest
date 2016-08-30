@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="all">
+        <item android:title="应用">
+            <menu>
+                <item
+                    android:id="@+id/ac_refresh"
+                    android:icon="@drawable/ic_main_drawer_refresh"
+                    android:title="基础数据" />
+
+                <item
+                    android:id="@+id/ac_update"
+                    android:icon="@drawable/ic_main_drawer_update"
+                    android:title="版本更新" />
+
+            </menu>
+        </item>
+
+        <item android:title="系统">
+            <menu>
+                <item
+                    android:id="@+id/ac_exit"
+                    android:icon="@drawable/ic_main_drawer_exit"
+                    android:title="退出系统" />
+            </menu>
+        </item>
+
+    </group>
+</menu>
